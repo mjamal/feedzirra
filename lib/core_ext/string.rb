@@ -4,6 +4,6 @@ class String
   end
   
   def sanitize
-    Loofah.scrub_fragment(self, :prune).to_s
+    Loofah.scrub_fragment(self, :prune).to_text
   end
 end
